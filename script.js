@@ -12,7 +12,7 @@ let yesScale = 1;
 const yesPhrases = [
     "YAYYY 💖",
     "BEST CHOICE 😌",
-    "YOU'RE SO CUTE 🥰",
+    "U MEAN IT? :OO 🥰",
     "SEE?? GOOD 😎",
     "I KNEW IT 😚",
     "SMART MOVE ✨",
@@ -66,7 +66,7 @@ yesBtn.addEventListener("click", () => {
         bottomText.style.transform = `translateY(${moveAmount}px)`;
 
         // SHOW YOUR YES GIF HERE
-        yesGif.src = "PUT_YOUR_YES_GIF_LINK_HERE";
+        yesGif.src = "https://tenor.com/en-GB/view/maxwell-cat-gif-10523016553059324224";
         yesGif.style.display = "block";
 
         yesCount++;
@@ -87,7 +87,7 @@ noBtn.addEventListener("click", () => {
         bottomText.textContent = noPhrases[noCount];
 
         // SHOW YOUR NO GIF HERE
-        noGif.src = "images/cat-cute.gif";
+        noGif.src = "https://tenor.com/en-GB/view/cat-cute-animation-meme-thank-you-gif-14551620004673547651";
         noGif.style.display = "block";
 
         moveNoButton();
@@ -103,3 +103,4 @@ noBtn.addEventListener("click", () => {
         }, 1200);
     }
 });
+
