@@ -1,0 +1,38 @@
+body {
+    background: pink;
+    text-align: center;
+    margin-top: 15vh;
+    font-family: Arial;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.card img {
+    width: 200px;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
+.card p {
+    font-size: 1.2rem;
+}
+
+.banana {
+    position: fixed;
+    font-size: 30px;
+    animation: bananaFall linear forwards;
+}
+
+@keyframes bananaFall {
+    0% { transform: translateY(-10vh) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+}

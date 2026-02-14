@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>part 2</title>
+    <link rel="stylesheet" href="page2.css">
+</head>
+
+<body>
+
+<h1>hey, you should open these links mwhehehe💖✨</h1>
+
+<!-- LOOPING AUDIO -->
+<audio autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="menu">
+
+    <div class="card">
+        <a href="https://open.spotify.com/playlist/2nRx1TKWJGrpfvrjSlbaVF?pi=cAul4GjGSa-QP" target="_blank">
+            <img src="images/DI KO ALAM HEHE.jpg">
+            <p>hmmm spotify</p>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="https://heyzine.com/flip-book/02f7e12d02.html" target="_blank">
+            <img src="images/IDK HEHEH.jpg">
+            <p>hmmm a story</p>
+        </a>
+    </div>
+
+</div>
+
+<script>
+function bananaRain() {
+    const banana = document.createElement("div");
+    banana.classList.add("banana");
+    banana.textContent = "🍌";
+    banana.style.left = Math.random() * window.innerWidth + "px";
+    banana.style.animationDuration = (Math.random() * 3 + 3) + "s";
+    document.body.appendChild(banana);
+
+    setTimeout(() => {
+        banana.remove();
+    }, 6000);
+}
+
+setInterval(bananaRain, 400);
+</script>
+
+</body>
+</html>
